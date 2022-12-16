@@ -1,0 +1,81 @@
+{
+	"info": {
+		"_postman_id": "35a98000-98b7-4c86-8fc2-f2ed510fe86e",
+		"name": "FirebaseRealTimeDb",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "GET http://localhost:3000/firebase",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "http://localhost:3000/firebase"
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:3000/firebase",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"Mr Jhon\",\r\n    \"birthdate\": \"2022-12-14\",\r\n    \"city\": \"Dhaka\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://localhost:3000/firebase"
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:3000/firebase/{id}",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"birthdate\": \"2022-12-14\",\r\n    \"city\": \"Dhaka 3\",\r\n    \"name\": \"Mr Jhon --- 3 --\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://localhost:3000/firebase/-NJPPLF2xTJi-n1OANOu"
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:3000/firebase/{id}",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "http://localhost:3000/firebase/-NJPPLF2xTJi-n1OANOu"
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:3000/firebase/{id}",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": "http://localhost:3000/firebase/-NJPPLF2xTJi-n1OANOu"
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:3000/firebase/exists/{id}",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "http://localhost:3000/firebase/exists/-NJPPLF2xTJi-n1OANOu"
+			},
+			"response": []
+		}
+	]
+}
